@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-25T05:23:57.000Z</updated>
+  <updated>2016-04-25T05:30:04.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,24 +16,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Hello Blog</title>
     <link href="http://yoursite.com/2016/04/24/HelloBlog/"/>
     <id>http://yoursite.com/2016/04/24/HelloBlog/</id>
     <published>2016-04-23T16:00:00.000Z</published>
-    <updated>2016-04-25T05:23:57.000Z</updated>
+    <updated>2016-04-25T05:30:04.000Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;Hello-Blog&quot;&gt;&lt;a href=&quot;#Hello-Blog&quot; class=&quot;headerlink&quot; title=&quot;Hello Blog&quot;&gt;&lt;/a&gt;Hello Blog&lt;/h1&gt;&lt;p&gt;从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转,到今天才真正搭好。&lt;/p&gt;
+    <content type="html">&lt;p&gt;从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转,到今天才真正搭好。&lt;/p&gt;
 &lt;p&gt;一开始用的 github 上一个开源项目，一键生成的博客 &lt;a href=&quot;https://github.com/isnowfy/simple&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;simple&lt;/a&gt;.十分的简单，作者实在很强大，还做了博客的编辑页面，完全不用再下载编辑器，而且每一篇博客都是一键生成，不需要使用命令行，方便到极点。比较懒的同学可以试试。&lt;/p&gt;
 &lt;p&gt;但是后来发现那不是我的菜，毕竟是做开发的程序猿，天生爱折腾，就开始琢磨用 &lt;strong&gt;Hexo+github&lt;/strong&gt; 搭建一个。第一次搭的时候由于对命令行的不熟悉失败了，然后这个搭建博客的计划就搁置了。后来有一天在查资料的时候猛地就想起来这件事，就又开始搭建，这第二次总算成功了，跟着教程一步步做，但由于不是每个人设备和环境都一样，也踩了很多坑，查阅了很多资料。教程里的主题用的是 &lt;strong&gt;Next&lt;/strong&gt;,作为Material Design(文中均用&lt;strong&gt;MD&lt;/strong&gt;来代替)深度爱好者的我来说，怎么可能没想到去找 MD风格的主题呢？找啊找，终于找到了——&lt;a href=&quot;https://github.com/yscoder/hexo-theme-indigo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;indigo&lt;/a&gt;. 第一眼看到这个主题我就决定要用它，哈哈，MD实在太美了,实在无法把持.在趟了无数的坑之后，这个博客终于搭建好了，下一篇博客就会记录当中的种种辛酸(做抹眼泪状)。&lt;/p&gt;
 &lt;p&gt;作为计算机科班出身的我来说，随着工作越发觉得自己的基础很差不扎实，就说现在正在做的Android，很多基础的知识掌握的都很散乱，并没有系统性的概念，我就觉得很有必要系统地去再学习一遍，巩固一下，同时将自己平时学到的看到的知识做个系统的总结，遇到的问题做个记录，发现的一些新奇有趣的也记下来，以免再次遇到的时候又要重新去搜索引擎找。&lt;/p&gt;
 &lt;p&gt;恩，没错，我这就是一个知识总结的博客。希望自己能坚持不懈，提高自己的技术。&lt;/p&gt;
 &lt;p&gt;共勉。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/1.jpg&quot; alt=&quot;hello_blog_pic&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Hello-Blog&quot;&gt;&lt;a href=&quot;#Hello-Blog&quot; class=&quot;headerlink&quot; title=&quot;Hello Blog&quot;&gt;&lt;/a&gt;Hello Blog&lt;/h1&gt;&lt;p&gt;从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转
+      &lt;p&gt;从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转,到今天才真正搭好。&lt;/p&gt;
+&lt;p&gt;一开始用的 github 上一个开源项目，一键生成的博客 &lt;a href=&quot;https://github.com/isnowfy/simple&quot; target=&quot;
     
     </summary>
     
