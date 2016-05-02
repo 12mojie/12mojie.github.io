@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-25T05:30:04.000Z</updated>
+  <updated>2016-05-02T16:10:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,160 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo My Blog</title>
+    <link href="http://yoursite.com/2016/05/01/Hexo%20My%20Blog/"/>
+    <id>http://yoursite.com/2016/05/01/Hexo My Blog/</id>
+    <published>2016-04-30T16:00:00.000Z</published>
+    <updated>2016-05-02T16:10:42.000Z</updated>
+    
+    <content type="html">&lt;p&gt;这阵子各种事情忙，到了51劳动节假期才有时间来写这篇博客记录一下hexo my blog的艰辛历程。&lt;/p&gt;
+&lt;p&gt;#####什么是Hexo？&lt;br&gt;&lt;strong&gt;Hexo&lt;/strong&gt; 是一个快速、简洁且高效的博客框架。使用 &lt;strong&gt;Markdown&lt;/strong&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。据说作者是一位来自台湾的大学生&lt;a href=&quot;https://github.com/hexojs/hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tommy351&lt;/a&gt;，表示深深的膜拜。接下来就是用Hexo搭建博客的过程, &lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo.io/zh-cn/&lt;/a&gt; 这是&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;的中文官网(注意可能有墙),上面有文档查看、主题下载。由于我用的是Mac,所以本文主要就是针对Mac端,用Hexo+github搭建个人博客啦啦啦啦(其实win端步骤也差不多的)。首先捋一下过程：&lt;/p&gt;
+&lt;p&gt;1.首先hexo是基于node.js的，所以必须安装node.js &lt;/p&gt;
+&lt;p&gt;2.安装node.js方法很多，我选择homebrew安装方式(简单粗暴) &lt;/p&gt;
+&lt;p&gt;3.安装homebrew就很简单了，mac自带ruby脚本功能，一句话OK &lt;/p&gt;
+&lt;p&gt;4.hexo提交部署github需要使用git工具，所以需要安装git，用homebrew的话也是一句话搞定 &lt;/p&gt;
+&lt;p&gt;5.整理一下安装顺序（homebrew-node.js-hexo-git）&lt;/p&gt;
+&lt;p&gt;OK，思路清晰了，开工！ &lt;/p&gt;
+&lt;p&gt;###下载Homebrew&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###安装Node.js&lt;br&gt;    brew install node&lt;/p&gt;
+&lt;p&gt;###安装Hexo&lt;/p&gt;
+&lt;p&gt;1.全局安装Hexo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install -g hexo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果遇到错误，应该是被墙堵住了，那就要这样安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install -g hexo-cli --no-optional
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.创建blog文件夹(需要进入到自己要存放的目录下再执行，不然默认是在Mac的&lt;strong&gt;个人&lt;/strong&gt;这个文件夹下创建) &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo init blog
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.进入blog文件夹&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd blog    
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.安装Hexo依赖包    &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;5.运行服务器（默认地址为 &lt;a href=&quot;http://localhost:4000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000&lt;/a&gt; 在浏览器打开就可以预览到默认主题的博客首页啦）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo server  （ 缩写是 hexo s ）
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：&lt;/p&gt;
+&lt;p&gt;1.如果遇到因为权限问题报错，在命令最前面加 &lt;strong&gt;-sudo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2.这里不需要运行 hexo g 指令，我们打开访问的页面是node.js动态生成的，也就是本地网页。    &lt;/p&gt;
+&lt;p&gt;###安装Git&lt;br&gt;在这里我试了2种方法，第一种是直接用homebrew下载，第二种是下载Xcode，因为Xcode自带git，但是下载Xcode，显得有些累赘，如果不是iOS开发，Xcode就没啥用还占空间，当然如果是IOS开发就可以用第二种方法,简单粗暴。但在这里我推荐第一种——直接用homebrew下载：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo brew install git     
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#####注册一个github账号以及创建一个仓库用来存放博客文件&lt;br&gt;注册就没什么好说的啦，就说说怎么创建仓库.几张图搞定。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/github1.png =100×50&quot; alt=&quot;github1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/github2.png =100×50&quot; alt=&quot;github2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/github3.png =100×50&quot; alt=&quot;github3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/github4.png =100×50&quot; alt=&quot;github4&quot;&gt;&lt;/p&gt;
+&lt;p&gt;#####配置Git&lt;/p&gt;
+&lt;p&gt;1.检查SSH keys是否存在&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;如果显示“No such file or directory”，跳到第3步，否则第2步。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2.备份和移除原来的SSh key设置(因为已经存在key文件，所以需要备份旧的数据并删除)&lt;/p&gt;
+&lt;p&gt;   在相应路径下（~/.ssh/id_rsa.pub）找到id_rsa和id_rsa.pub两个文件,剪切到别的地方备份好。&lt;/p&gt;
+&lt;p&gt;3.生成新的SSH Key(注意将your_email@example.com换成自己注册Github的邮箱地址。后面只需要默认设置就好，所以当需要输入文件名的时候，果断回车。)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &amp;quot;your_email@example.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;接着系统会让你输入密码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enter passphrase (empty for no passphrase):&amp;lt;输入密码&amp;gt;
+Enter same passphrase again:&amp;lt;再次输入密码&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就默认会在相应路径下（~/.ssh/id_rsa.pub）生成id_rsa和id_rsa.pub两个文件，找到id_rsa.pub文件，用文本编辑器打开，复制出来。&lt;br&gt;登陆github，点击右上角的 Account—&amp;gt;Settings—&amp;gt;SSH Public keys —&amp;gt; add another public keys&lt;br&gt;把刚刚复制的SSH Key到里面（key文本框中），点击 add key 就ok了。&lt;/p&gt;
+&lt;p&gt;最后我们来测试一下SSH Key是不是配置好了&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ssh -T git@github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果是这样的：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;The authenticity of host &amp;apos;github.com (207.97.227.239)&amp;apos; can&amp;apos;t be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;淡定，输入yes 就会看到&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Hi &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt;! You&amp;apos;ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到这里只是能通过SSH Key链接github，但是还没完，为了通过git来提交博客的文章，我们还需要配置好git的账号&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;你的github名字&amp;quot;
+git config --global user.email &amp;quot;你注册github的邮箱&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到这里才算是真正配置好Git了，下面就开始配置自己的博客啦。&lt;/p&gt;
+&lt;p&gt;###配置博客&lt;br&gt;&lt;strong&gt;注意：在配置所有的_config.yml文件时（包括theme中的），在所有的冒号:后边都要加一个空格，否则执行hexo命令会报错，切记 切记&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;本地的blog文件夹下内容为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;_config.yml    
+db.json 
+node_modules 
+package.json
+scaffolds
+source
+themes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;首先，把github部署为博客的仓库。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;打开blog文件夹下的_config.yml，往下滑到最后，修改成下面这样：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+    type: git
+    repository: https://github.com/Wenghaobin/wenghaobin.github.io.git
+   branch: master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;在blog文件夹目录下执行生成静态页面命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo generate        或者：hexo g
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此时若出现如下报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ERROR Local hexo not found in ~/blog
+ERROR Try runing: &amp;apos;npm install hexo --save&amp;apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;则执行命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo --save
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;若无报错，自行忽略此步骤。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;再执行配置命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo deploy            或者：hexo d
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;若执行命令hexo deploy仍然报错：无法连接git，则执行如下命令来安装hexo-deployer-git，&lt;br&gt;安装完应该出现在node_modules文件夹下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后再次执行hexo generate和hexo deploy命令，在浏览器中打开网址&lt;a href=&quot;http://wenghaobin.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenghaobin.github.io&lt;/a&gt;（将wenghaobin换成你的用户名）能看到&lt;a href=&quot;http://localhost:4000时一样的页面。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000时一样的页面。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OK!博客和github连接成功！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;接着更换主题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;哈哈，作为爱装b的新时代骚年，一定要选一个自己喜欢的主题才行！&lt;/p&gt;
+&lt;p&gt;你可以到&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;官网主题页去搜寻自己喜欢的theme。这里以hexo-theme-indigo为例&lt;/p&gt;
+&lt;p&gt;终端cd到 blog 目录下执行如下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo  &amp;lt;下载主题&amp;gt; 
+npm install hexo-renderer-less --save  &amp;lt;下载依赖&amp;gt;
+npm install hexo-generator-feed --save  &amp;lt;下载依赖&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;修改hexo/_config.yml&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 主题
+theme: indigo
+
+# 插件依赖
+plugins: -hexo-renderer-less -hexo-generator-feed
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;嘿嘿，主题到这里就安装成功了，然后就进入blog/themes/indigo目录下，打开_config.yml文件，开始配置博客中属于自己的内容。&lt;/p&gt;
+&lt;p&gt;修改完之后，终端cd到blog目录下执行如下命令(每次部署了主题或文章的步骤)：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo clean           //清除缓存文件 (db.json) 和已生成的静态文件 (public)
+hexo g             //生成缓存和静态文件
+hexo d             //重新部署到服务器
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后在浏览器中打开网址&lt;a href=&quot;http://wenghaobin.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenghaobin.github.io&lt;/a&gt;（将wenghaobin换成你的用户名）能看到刚刚安装的主题和刚刚修改的内容。&lt;/p&gt;
+&lt;p&gt;哈哈，到这里用&lt;strong&gt;hexo+github&lt;/strong&gt;搭建的博客就基本搞定啦，跟着教程走，博客马上有！作为爱折腾的程序猿，怎么甘心到这里就结束呢？还要换一个属于自己的域名才对得起自己嘛，&lt;br&gt;继续往下走。&lt;/p&gt;
+&lt;p&gt;#####更换域名&lt;/p&gt;
+&lt;p&gt;我选的是&lt;a href=&quot;http://www.freenom.com/zh/index.html?lang=zh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Freenom&lt;/a&gt;的免费域名，一年免费，还是不错的。&lt;/p&gt;
+&lt;p&gt;DNS解析用的是&lt;a href=&quot;https://www.dnspod.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DNSPod&lt;/a&gt;,也是免费的，嘿嘿。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;添加了域名解析之后要在source目录下创建一个CNAME,在里面写上自己申请的域名地址,然后重新部署到github当中&lt;/p&gt;
+&lt;p&gt;这里就不详细说明这俩步骤了 下面的链接里有详细的说明&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.chinaz.com/web/2015/0312/389381.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.chinaz.com/web/2015/0312/389381.shtml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;######至此，&lt;strong&gt;hexo+github&lt;/strong&gt;才算搭建完成。&lt;/p&gt;
+&lt;p&gt;###后记&lt;br&gt;以上便是我搭建本博客的全过程，希望对大家有所帮助，欢迎吐槽～&lt;/p&gt;
+&lt;p&gt;转载请保留原文地址：&lt;a href=&quot;http://wenghaobin.tk/2016/05/01/HexoMyBlog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenghaobin.tk/2016/05/01/HexoMyBlog/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;###参考文章&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1.Hexo官方文档: &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/zh-cn/docs/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2.hexo你的博客: &lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;3.申请免费域名和域名解析教程：&lt;a href=&quot;http://www.chinaz.com/web/2015/0312/389381.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.chinaz.com/web/2015/0312/389381.shtml&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;4.如何搭建一个独立博客——简明Github Pages与Hexo教程: &lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/05289a4bc8b2&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;5.Mac上搭建基于GitHub的Hexo博客: &lt;a href=&quot;http://www.jianshu.com/p/13e64c9e2295&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/13e64c9e2295&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;6.在Mac下通过HEXO在Github上搭建博客: &lt;a href=&quot;http://www.jianshu.com/p/ecd51e8ef2fa&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/ecd51e8ef2fa&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这阵子各种事情忙，到了51劳动节假期才有时间来写这篇博客记录一下hexo my blog的艰辛历程。&lt;/p&gt;
+&lt;p&gt;#####什么是Hexo？&lt;br&gt;&lt;strong&gt;Hexo&lt;/strong&gt; 是一个快速、简洁且高效的博客框架。使用 &lt;strong&gt;Markdown&lt;/st
+    
+    </summary>
+    
+      <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Blog</title>
