@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-11T19:06:20.000Z</updated>
+  <updated>2016-05-11T19:17:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,12 @@
     <link href="http://yoursite.com/2016/05/12/design%20my%20AndroidStudio/"/>
     <id>http://yoursite.com/2016/05/12/design my AndroidStudio/</id>
     <published>2016-05-11T16:00:00.000Z</published>
-    <updated>2016-05-11T19:06:20.000Z</updated>
+    <updated>2016-05-11T19:17:47.000Z</updated>
     
     <content type="html">&lt;p&gt;从刚开始接触Android，就是在AndroidStudio上（以下简称为AS）写demo、做开发。直到今天我都一直使用自带的白色主题，因为感觉黑色的主题很伤眼，看久了眼睛很累，后来也只是找了个主题换了字体颜色，背景还是白色。今天傍晚突发奇想就上去&lt;a href=&quot;http://color-themes.com/?view=index&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Color Themes&lt;/a&gt; 找个黑色的代码高亮的主题，因为白色的主题代码的类型区分的不是很清楚，就想着有没有主题可以把代码里面的不同类型都看的清清楚楚，这样敲代码的时候思路也可以清晰一点（还可以装b 嘿嘿 &amp;gt;_&amp;lt;），最后看到&lt;a href=&quot;http://color-themes.com/?view=theme&amp;amp;id=563a1a7680b4acf11273ae94&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Monokai Sublime Text 3&lt;/a&gt; 这一主题，很酷，代码高亮，区别度也很大，哈哈，就觉得是你了，立马下载。下载完，打开AS：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;File ——&amp;gt; Import Settings ——&amp;gt; 主题jar包所在位置 ——&amp;gt; 主题jar包 ——&amp;gt; restart AS
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重新打开AS之后就看到下面这样的场景：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS1.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS1.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;代码高亮，黑色冷酷，区分清晰，啧啧啧，赞一个。&lt;/p&gt;
 &lt;p&gt;哎！等等，左边和上边的导航栏怎么是白色的，原来这个主题&lt;strong&gt;只是改变字体颜色&lt;/strong&gt;，要改变整个AS的主题才会全黑，嘿嘿，迫不及待动手了。&lt;/p&gt;
 &lt;p&gt;Mac：&lt;/p&gt;
@@ -33,14 +33,14 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Win:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Setting ——&amp;gt; IDE setting ——&amp;gt; Editor ——&amp;gt; Appearance ——&amp;gt; Themes ——&amp;gt; Darcula 
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;恩，看看效果~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS2.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS2.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;哎，怎么一改主题，我要的字体颜色怎么没了！这不科学，翻到字体的设置，手动设置字体颜色，哈哈，搞定，酷吧！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS3.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS4.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS3.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS4.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;哎！等等，还有问题，为什么注释和静态方法都是灰色的，黑色背景的很难看清啊，不行，强迫症发作，我要改主题的颜色配置！解压主题jar包，拿到2个文件夹和1个执行文件，打开&lt;strong&gt;colors文件夹&lt;/strong&gt;发现只有1个文件，看来就是你了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS5.png =350x100&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS5.png  =350x100&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;打开一看，全是颜色的配置啊，眼花缭乱 @_@ ,怎么办？想想办法，有了，嘿嘿，先找到灰色颜色的配置是——75715E（在这里，我用的是mac自带的取色器，在灰色注释那里直接取的颜色再去找，这个我就不细说了，网上很多不同的取色器可以用），再全局搜索，一个个看标题写的是哪个的颜色，找到注释和静态办法的英文就用自己找到的喜欢的颜色改掉他的颜色（&lt;strong&gt;我下面只是一个例子，要找到说明是注释和静态办法的英文单词才好改哇&lt;/strong&gt;）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS6.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS6.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;接下来就是要把自己改好的文件打包成jar文件导入AS就可以啦！这里简单讲解一下文件夹打包成jar包的方法（以mysimple文件为例）：&lt;/p&gt;
 &lt;p&gt;要打包mysimple文件夹，则先切换到此目录下，在终端中输入&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;jar cvf mysimple.war  *    
@@ -48,7 +48,7 @@
 &lt;p&gt;##&lt;strong&gt;然而这里，有坑！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;打包的时候，我把原本的jar包命名改了（避免篡改行为），导入AS就出错了，后来把所有的命名都改了，重新打包导入才成功！记得是所有的有关原本jar包的命名都要改！！！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最终的效果是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS7.png =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xtcs0.com1.z0.glb.clouddn.com/design%20AS7.png  =500x300&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;哈哈，帅爆了！我喜欢，给自己赞一个！&lt;/p&gt;
 &lt;p&gt;欢迎吐槽！&lt;/p&gt;
 &lt;p&gt;##感谢原作者 Tony Gaisser 制作的原主题！！&lt;/p&gt;
