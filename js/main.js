@@ -150,6 +150,16 @@
             mask.addEventListener(even, function() {
                 hide();
             }, false);
+        },
+        search: function() {
+            var searchWrap = d.getElementById('search-wrap');
+
+            function toggleSearch() {
+                searchWrap.classList.toggle('in');
+            }
+
+            d.getElementById('search').addEventListener(even, toggleSearch);
+            d.getElementById('search').addEventListener(even, toggleSearch);
         }
     };
 
@@ -169,8 +179,9 @@
         animate(Blog.goTop);
     }, false);
 
-    menuToggle.addEventListener(even, function() {
+    menuToggle.addEventListener(even, function(e) {
         Blog.toggleMenu(true);
+        e.preventDefault();
     }, false);
 
     menuOff.addEventListener(even, function() {
@@ -188,14 +199,12 @@
         Blog.fixedToc(top);
     }, false);
 
-    if (BLOG_SHARE) {
+    if (typeof BLOG_SHARE !== 'undefined') {
         Blog.share();
     }
 
     Waves.init();
-    Waves.attach('.waves-button-light', ['waves-button', 'waves-light']);
-    Waves.attach('.waves-circle-light', ['waves-circle', 'waves-light']);
-    Waves.attach('.waves-block, .global-share li', ['waves-block']);
+    Waves.attach('.global-share li', ['waves-block']);
     Waves.attach('.article-tag-list-link, #page-nav a, #page-nav span', ['waves-button']);
 
 })(window, document);

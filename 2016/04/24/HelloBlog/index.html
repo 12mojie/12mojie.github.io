@@ -33,8 +33,8 @@
   <div id="loading" class="active"></div>
 
   <nav id="menu" class="hide" >
-   <div class="inner">
-  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
@@ -46,37 +46,37 @@
       </hgroup>
     </div>
   </div>
-  <ul class="nav">
+  <ul class="nav flex-col">
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/"  >
             <i class="icon icon-lg icon-home"></i>
             主页
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/archives"  >
             <i class="icon icon-lg icon-archives"></i>
             时间轴
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/tags"  >
             <i class="icon icon-lg icon-tags"></i>
             标签
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="https://github.com/Wenghaobin" target="_blank" >
             <i class="icon icon-lg icon-github"></i>
             github
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="http://www.weibo.com/Wenghaobin" target="_blank" >
             <i class="icon icon-lg icon-weibo"></i>
             weibo
@@ -86,14 +86,12 @@
   </ul>
 
   <footer class="footer">
-  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a>
-
- <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> </p>
-
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
   <p>好饼哥’s blog &copy; 2016</p>
-  <p>Power by ☃ <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  </footer>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
 
 </div>
 
@@ -101,12 +99,23 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
   <main id="main">
     <header class="header" id="header">
     <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">Hello Blog</div>
         
-        <a href="javascript:;" class="header-icon waves-circle-light" id="menu-share">
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
             <i class="icon icon-lg icon-share-alt"></i>
         </a>
         
@@ -180,28 +189,34 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
 
         <div class="post-main">
 
-            <div class="post-content" id="post-content" itemprop="postContent"><p>从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转,到今天才真正搭好。</p>
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <p>从三月份开始就一直想搭一个属于自己的个人博客，不愿意收到平台的束缚，兜兜转转,到今天才真正搭好。</p>
 <p>一开始用的 github 上一个开源项目，一键生成的博客 <a href="https://github.com/isnowfy/simple" target="_blank" rel="external">simple</a>.十分的简单，作者实在很强大，还做了博客的编辑页面，完全不用再下载编辑器，而且每一篇博客都是一键生成，不需要使用命令行，方便到极点。比较懒的同学可以试试。<a id="more"></a></p>
 <p>但是后来发现那不是我的菜，毕竟是做开发的程序猿，天生爱折腾，就开始琢磨用 <strong>Hexo+github</strong> 搭建一个。第一次搭的时候由于对命令行的不熟悉失败了，然后这个搭建博客的计划就搁置了。后来有一天在查资料的时候猛地就想起来这件事，就又开始搭建，这第二次总算成功了，跟着教程一步步做，但由于不是每个人设备和环境都一样，也踩了很多坑，查阅了很多资料。教程里的主题用的是 <strong>Next</strong>,作为Material Design(文中均用<strong>MD</strong>来代替)深度爱好者的我来说，怎么可能没想到去找 MD风格的主题呢？找啊找，终于找到了——<a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="external">indigo</a>. 第一眼看到这个主题我就决定要用它，哈哈，MD实在太美了,实在无法把持.在趟了无数的坑之后，这个博客终于搭建好了，下一篇博客就会记录当中的种种辛酸(做抹眼泪状)。</p>
 <p>作为计算机科班出身的我来说，随着工作越发觉得自己的基础很差不扎实，就说现在正在做的Android，很多基础的知识掌握的都很散乱，并没有系统性的概念，我就觉得很有必要系统地去再学习一遍，巩固一下，同时将自己平时学到的看到的知识做个系统的总结，遇到的问题做个记录，发现的一些新奇有趣的也记下来，以免再次遇到的时候又要重新去搜索引擎找。</p>
 <p>恩，没错，我这就是一个知识总结的博客。希望自己能坚持不懈，提高自己的技术。</p>
 <p>共勉。</p>
-</div>
 
+            <blockquote>
+              <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/04/24/HelloBlog/" target="_blank" rel="external">http://yoursite.com/2016/04/24/HelloBlog/</a>
+              </p>
+              <footer><cite><a href="http://yoursite.com">@好饼哥’s blog</a></cite></footer>
+            </blockquote>
+            </div>
             
-<nav class="post-nav flex-row">
-  <div class="flex-col waves-block prev">
-    
-      <a href="/2016/05/01/Hexo My Blog/" title="Hexo My Blog" id="post-prev" class="post-nav-link">
-        <i class="icon icon-chevron-left"></i>
-        <span class="article-nav-title">上一篇</span>
+<nav class="post-nav">
+  
+    <div class="waves-block waves-effect prev fl">
+      <a href="/2016/05/01/Hexo My Blog/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Hexo My Blog</h4>
       </a>
-    
-  </div>
-  <div class="flex-col waves-block next">
-    
-  </div>
+    </div>
+  
 
+  
 </nav>
 
 
@@ -244,7 +259,7 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
     </div>
   </main>
 <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 <script>
 var BLOG_SHARE = {
@@ -298,12 +313,30 @@ var BLOG_SHARE = {
 
 
 
-
-<script type="text/javascript">
-var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cspan id='cnzz_stat_icon_1258929716' style='display:none' %3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1258929716%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
 </script>
 
+<script src="/js/search.js"></script>
+
+
+
+
+
+<script src="http://s95.cnzz.com/z_stat.php?id=1258929716&web_id=1258929716"></script>
 
 
 

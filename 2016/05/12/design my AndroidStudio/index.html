@@ -37,8 +37,8 @@
   <div id="loading" class="active"></div>
 
   <nav id="menu" class="hide" >
-   <div class="inner">
-  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
@@ -50,37 +50,37 @@
       </hgroup>
     </div>
   </div>
-  <ul class="nav">
+  <ul class="nav flex-col">
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/"  >
             <i class="icon icon-lg icon-home"></i>
             主页
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/archives"  >
             <i class="icon icon-lg icon-archives"></i>
             时间轴
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="/tags"  >
             <i class="icon icon-lg icon-tags"></i>
             标签
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="https://github.com/Wenghaobin" target="_blank" >
             <i class="icon icon-lg icon-github"></i>
             github
           </a>
         </li>
     
-        <li class="waves-block">
+        <li class="waves-block waves-effect">
           <a href="http://www.weibo.com/Wenghaobin" target="_blank" >
             <i class="icon icon-lg icon-weibo"></i>
             weibo
@@ -90,14 +90,12 @@
   </ul>
 
   <footer class="footer">
-  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a>
-
- <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> </p>
-
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
   <p>好饼哥’s blog &copy; 2016</p>
-  <p>Power by ☃ <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  </footer>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
 
 </div>
 
@@ -105,12 +103,23 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
   <main id="main">
     <header class="header" id="header">
     <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">design my AndroidStudio</div>
         
-        <a href="javascript:;" class="header-icon waves-circle-light" id="menu-share">
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
             <i class="icon icon-lg icon-share-alt"></i>
         </a>
         
@@ -184,7 +193,8 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
 
         <div class="post-main">
 
-            <div class="post-content" id="post-content" itemprop="postContent"><p>从刚开始接触Android，就是在AndroidStudio上（以下简称为AS）写demo、做开发。直到今天我都一直使用自带的白色主题，因为感觉黑色的主题很伤眼，看久了眼睛很累，后来也只是找了个主题换了字体颜色，背景还是白色。今天傍晚突发奇想就上去<a href="http://color-themes.com/?view=index" target="_blank" rel="external">Color Themes</a> 找个黑色的代码高亮的主题，因为白色的主题代码的类型区分的不是很清楚，就想着有没有主题可以把代码里面的不同类型都看的清清楚楚，这样敲代码的时候思路也可以清晰一点（还可以装b 嘿嘿 &gt;_&lt;），最后看到<a href="http://color-themes.com/?view=theme&amp;id=563a1a7680b4acf11273ae94" target="_blank" rel="external">Monokai Sublime Text 3</a> 这一主题，很酷，代码高亮，区别度也很大，哈哈，就觉得是你了，立马下载。<a id="more"></a></p>
+            <div class="post-content" id="post-content" itemprop="postContent">
+            <p>从刚开始接触Android，就是在AndroidStudio上（以下简称为AS）写demo、做开发。直到今天我都一直使用自带的白色主题，因为感觉黑色的主题很伤眼，看久了眼睛很累，后来也只是找了个主题换了字体颜色，背景还是白色。今天傍晚突发奇想就上去<a href="http://color-themes.com/?view=index" target="_blank" rel="external">Color Themes</a> 找个黑色的代码高亮的主题，因为白色的主题代码的类型区分的不是很清楚，就想着有没有主题可以把代码里面的不同类型都看的清清楚楚，这样敲代码的时候思路也可以清晰一点（还可以装b 嘿嘿 &gt;_&lt;），最后看到<a href="http://color-themes.com/?view=theme&amp;id=563a1a7680b4acf11273ae94" target="_blank" rel="external">Monokai Sublime Text 3</a> 这一主题，很酷，代码高亮，区别度也很大，哈哈，就觉得是你了，立马下载。<a id="more"></a></p>
 <p>下载完，打开AS：</p>
 <pre><code>File ——&gt; Import Settings ——&gt; 主题jar包所在位置 ——&gt; 主题jar包 ——&gt; restart AS
 </code></pre><p>重新打开AS之后就看到下面这样的场景：</p>
@@ -215,22 +225,27 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
 <p>哈哈，帅爆了！我喜欢，给自己赞一个！</p>
 <p>欢迎吐槽！</p>
 <p><strong>感谢原作者 Tony Gaisser 制作的原主题！！</strong></p>
-</div>
 
+            <blockquote>
+              <p>
+                本文地址：
+                <a href="http://yoursite.com/2016/05/12/design my AndroidStudio/" target="_blank" rel="external">http://yoursite.com/2016/05/12/design my AndroidStudio/</a>
+              </p>
+              <footer><cite><a href="http://yoursite.com">@好饼哥’s blog</a></cite></footer>
+            </blockquote>
+            </div>
             
-<nav class="post-nav flex-row">
-  <div class="flex-col waves-block prev">
-    
-  </div>
-  <div class="flex-col waves-block next">
-    
-      <a href="/2016/05/01/Hexo My Blog/" title="Hexo My Blog" id="post-next" class="post-nav-link">
-        <span class="article-nav-title">下一篇</span>
-        <i class="icon icon-chevron-right"></i>
-      </a>
-    
-  </div>
+<nav class="post-nav">
+  
 
+  
+    <div class="waves-block waves-effect next fr">
+      <a href="/2016/05/01/Hexo My Blog/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hexo My Blog</h4>
+      </a>
+    </div>
+  
 </nav>
 
 
@@ -273,7 +288,7 @@ Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">ind
     </div>
   </main>
 <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 <script>
 var BLOG_SHARE = {
@@ -327,12 +342,30 @@ var BLOG_SHARE = {
 
 
 
-
-<script type="text/javascript">
-var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cspan id='cnzz_stat_icon_1258929716' style='display:none' %3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1258929716%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
 </script>
 
+<script src="/js/search.js"></script>
+
+
+
+
+
+<script src="http://s95.cnzz.com/z_stat.php?id=1258929716&web_id=1258929716"></script>
 
 
 
